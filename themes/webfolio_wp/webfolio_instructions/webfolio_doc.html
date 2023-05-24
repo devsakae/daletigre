@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Webfolio - Setting up</title>
+<style type="text/css">
+body { margin: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #202020; line-height: 20px; }
+h1 { margin-top: 10px; }
+fieldset { margin: 30px 0; padding: 20px; }
+legend { font-size: 18px; padding: 0 10px; color: #0093CA; }
+	
+img { border:6px solid #efefef;}
+</style>
+</head>
+
+<body>
+<h1>Webfolio Wordpress Theme</h1>
+<h2>Features </h2>
+<ul><li>Widget ready</li>
+  <li>Easy to setup, Theme Options Page</li>
+  <li> Cufon Font Replacement Support ( <a href="http://cufon.shoqolate.com/generate/">http://cufon.shoqolate.com/generate/</a> ) </li>
+  <li>TimThumb image resizing ( <a href="http://www.darrenhoyt.com/2008/04/02/timthumb-php-script-released/">http://www.darrenhoyt.com/2008/04/02/timthumb-php-script-released/</a>)</li>
+  <li>Stepcarousel JQuery Slider ( <a href="http://www.dynamicdrive.com/dynamicindex4/stepcarousel.htm">http://www.dynamicdrive.com/dynamicindex4/stepcarousel.htm</a> ) </li>
+  <li>JQuery Lightbox ( <a href="http://leandrovieira.com/projects/jquery/lightbox/">http://leandrovieira.com/projects/jquery/lightbox/</a> )</li>
+  <li>JQuery Superfish Dropdown Menus ( <a href="http://plugins.jquery.com/project/Superfish">http://plugins.jquery.com/project/Superfish</a> ) </li>
+  <li>JQuery Forms</li>
+  <li>  Ajax based contact form</li>
+  <li>Live form email validation<br />
+  </li>
+</ul>
+<fieldset>
+<legend>Installing Webfolio Theme </legend>
+<p><strong>1.</strong> Unzip the file that you have downloaded, you will find a folder called &quot;webfolio&quot;.</p>
+<p><strong>2.</strong> To install the theme you should have already wordpress installed and running on your server. Using FTP, upload  the &quot;rockwell&quot; theme folder to your web server, and place it in &quot;/WP-contents/themes/&quot;. So what you'll have in the end is &quot;wp-contents/themes/webfolio/&quot;.</p>
+<p><strong>3.</strong> Now that you have the theme uploaded you just need to login to your WP admin panel and activate it &quot;Appearance &gt; Themes&quot;. </p>
+<p><img src="images/theme_active.png" /></p>
+</fieldset>
+<fieldset>
+<legend>Theme Setting Up</legend>
+<h2><strong>Theme Options Page </strong></h2>
+<p>This themes comes with a custom options page ( Appearance &gt; Webfolio Options) where you will find:</p>
+<p><strong>1. Set up your site logo </strong>- You have enter the full path to an image logo and the image ALT text. </p>
+<p><strong>2. Cufon Text Replacement </strong> - The theme uses by default &quot;Fertigo Pro&quot; font for H1, H2, and top tagline text replacement. You can disable this by setting to &quot;No&quot;. This way the font used will be Arial. You can use different font with Cufon if you want, you just need to generate your font cufon script and change the path in header.php. Here is where you can generate the script for your font: <a href="http://cufon.shoqolate.com/generate/">http://cufon.shoqolate.com/generate/</a></p>
+<p><strong>3. Portfolio Category ID</strong> - You must specify this because for portfolio page, as you see on live demo, a special template is used.</p>
+<p><strong>4. Email Address for Contact Form</strong> - As the theme comes with a working Ajax contact form you need to specify your address in order to get the messages on your email.</p>
+<p><strong>5. Exclude Pages IDs from Top &amp; Footer Menu</strong> <strong>&amp; 
+    <label for="exclude_categs">Exclude Categories IDs from Top Menu</label>
+</strong> - As for the homepage boxes you will need to create some pages that not should be linked in the top menu and the top menu lists the pages and categories available, here you need to enter the IDs of the pages and categories that shouldnt appear on the main navigation. </p>
+<p><strong>6. Homepage Boxes </strong> - Simply create pages with small contnet to be displayed on the homepage and select the pages from dropdowns for each box. If you later want to make them not visible you simply need to let a single homebox not set.</p>
+<p><strong>7. Social Networking </strong>- You can enable or disable the footer &quot;Social Networking&quot; box. As the footer is a widget ready area if you choose to disable it you can have 3 wordpress widgets set there. If enabled you have to eneter your social links. It is not necessary to have them all set. </p>
+<p><strong>8. Add Google Analytics code</strong> - Simply fill in the filed for Analytics code and save. </p>
+<p><img src="images/options_panel.png" /></p>
+<h2>Slider setup </h2>
+<p>For having featured posts displayed in the homepage slider you will need to:</p>
+<p><strong>1. </strong>On the post edit page have a text set for Excerpt field. </p>
+<p><strong>2.</strong> Set up a custom field called &quot;featured&quot; with value &quot;1&quot;. </p>
+<p><strong>3.</strong> Set up a custom field called &quot;featured_image&quot; and enter the full path to the image you want to be displayed in the in slider. Please rememeber that this image has to be <strong>600px X 337px in size. </strong></p>
+<h2>Portolio Page</h2>
+<p>For portfolio page a template is used, portfolio.php, which makes use of TimThumb image resizing script ( timthumb.php ). You should know that  the first image found in the post content is resized and displayed on portfolio page. </p>
+<h2>Contact Page </h2>
+<p>When you create the Contact page, you will need to set the &quot;Contact&quot; template for it ( right side Attributes panel ), in order to have the contact page as in preview and have it Ajax functional. </p>
+<p><img src="images/contact_template.png" width="600" height="290" /></p>
+<p>&nbsp;</p>
+<h2>Lightbox</h2>
+<p>For adding Lightbox behaviour to a link just add class=&quot;lightbox&quot; to the link tag. </p>
+</fieldset>
+</body>
+
+</html>
+

